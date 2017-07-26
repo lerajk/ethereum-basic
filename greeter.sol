@@ -1,3 +1,7 @@
+
+/* a simple hello world contract. */ 
+
+
 pragma solidity ^0.4.0;
 
 contract mortal { 
