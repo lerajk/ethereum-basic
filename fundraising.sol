@@ -1,3 +1,6 @@
+//https://www.zupzup.org/smart-contract-solidity/
+
+
 pragma solidity ^0.4.6;
 
 contract WinnerTakesAll{
@@ -71,6 +74,7 @@ contract WinnerTakesAll{
 
 		function getProjectInfo (address addr) public constant returns (string name, string url, uint funds){
 
+			
 		}	//getProjectInfo
 
 } //winnertakesall contract 
