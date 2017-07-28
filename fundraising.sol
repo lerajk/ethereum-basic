@@ -73,8 +73,17 @@ contract WinnerTakesAll{
 			} //supportProject
 
 		function getProjectInfo (address addr) public constant returns (string name, string url, uint funds){
-
+				var project = projects[addr];
+				if(!project.initialized) throw; 
+				return (project.name, project.url, projects.funds);
 			
 		}	//getProjectInfo
+
+		function finish() {
+			if(now >= deadlineCampaign){
+				PayedOutTo(winningAddress, winningFunds);
+				selfdestruct(winningAddress);
+			}
+		}
 
 } //winnertakesall contract 

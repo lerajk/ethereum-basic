@@ -12,7 +12,7 @@ mapping (address => uint256) public balanceOf;
 
 event Transfer(address indexed from, address indexed to, uint256 value);
 
-function MyToken(uint256 _supply, string _name, string _symbol, uint _decimals){
+function MyToken(uint256 _supply, string _name, string _symbol, uint8 _decimals){
 
 	if (_supply ==  0) _supply = 100000;
 
