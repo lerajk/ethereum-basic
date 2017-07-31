@@ -1,4 +1,5 @@
 //creating a minimum viable token
+//https://www.ethereum.org/token
 
 contract owned {
 
