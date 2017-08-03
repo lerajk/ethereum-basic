@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=seU7DykOxfc
+
 contract Purchase {
 	address seller;
 	address buyer;
